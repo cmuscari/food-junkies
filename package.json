@@ -1,0 +1,32 @@
+{
+  "name": "food-junkies",
+  "version": "1.0.0",
+  "description": "## User Story As a food enthusiast, I want to be able to search for restaurant and dish recommendations,  so that I can try new foods when I am in a particular city.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmuscari/food-junkies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmuscari/food-junkies/issues"
+  },
+  "homepage": "https://github.com/cmuscari/food-junkies#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  }
+}
