@@ -18,7 +18,7 @@ class Post extends Model {
                     'restaurant_name',
                     'restaurant_url',
                     'comment_text',
-                    // 'photo',
+                    'photo',
                     'user_id',
                     'created_at',
                     [
@@ -62,10 +62,13 @@ Post.init(
                 len: [1]
             }
         },
-        // photo: {
-        //     type: ,
-        //     allowNull: true
-        // },
+        photo: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+                isURL: true
+            }
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
