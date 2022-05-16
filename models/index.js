@@ -46,3 +46,5 @@ Post.hasMany(Vote, {
 
 
 module.exports = { User, Post, Vote };
+
+

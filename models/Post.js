@@ -23,7 +23,7 @@ class Post extends Model {
                     'created_at',
                     [
                         sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'),
-                        'vote_count'
+                        'likes_count'
                     ]
                 ]
             });
@@ -63,11 +63,8 @@ Post.init(
             }
         },
         photo: {
-            type: DataTypes.STRING,
-            allowNull: true,
-            validate: {
-                isURL: true
-            }
+            type: DataTypes.BLOB("long"),
+            allowNull: true
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -89,3 +86,4 @@ Post.init(
 
 
 module.exports = Post;
+
