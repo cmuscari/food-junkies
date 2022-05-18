@@ -63,8 +63,11 @@ Post.init(
             }
         },
         photo: {
-            type: DataTypes.BLOB("long"),
-            allowNull: true
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+                isURL: true
+            }
         },
         user_id: {
             type: DataTypes.INTEGER,
