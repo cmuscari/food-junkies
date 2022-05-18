@@ -11,15 +11,24 @@
 <body>
   <div>
     <header>
-      <h1>Log in or Sign Up to see exciting restaraunts waiting to be discovered.</h1>
-    <nav>
+      <h1 class="justify-center font-bold text-red-800">FOOD JUNKIES</h1>
+      <div>
+        <img class="flex justify-around" src="/images/logo.jpg" alt="food junkies logo image" />
+      </div>
       {{#if loggedIn}}
-      <a href="/homepage">Homepage</a>
-      <button id="logout" class="">logout</button>
+      <h2 class="justify-center italic">Hope you've got something delicious!</h2>
       {{else}}
-      <a href="/login">login</a>
+      <h2 class="justify-center italic">Log in or Sign Up to see exciting restaurants waiting to be discovered</h2>
       {{/if}}
-    </nav>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">New Post</a>
+        <a href="/">Homepage</a>
+        <button id="logout" class="">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
     </header>
     <main>
       {{{ body }}}
