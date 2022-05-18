@@ -11,21 +11,25 @@
 <body>
   <div>
     <header>
-      <h1>Log in or Sign Up to see exciting restaraunts waiting to be discovered.</h1>
-    <nav>
-      {{#if loggedIn}}
-      <a href="/homepage">Homepage</a>
-      <button id="logout" class="">logout</button>
-      {{else}}
-      <a href="/login">login</a>
-      {{/if}}
-    </nav>
+      <h1 class="justify-center font-bold text-red-800">FOOD JUNKIES</h1>
+      <div>
+        <img class="flex justify-around" src="/images/logo.jpg" alt="food junkies logo image" />
+      </div>
+      <h2 class="justify-center italic">Log in or Sign Up to see exciting restaurants waiting to be discovered</h2>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/homepage">Homepage</a>
+        <button id="logout" class="">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-        Created by the Food Junkies!
+      Created by the Food Junkies!
     </footer>
   </div>
 
