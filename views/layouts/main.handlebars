@@ -15,10 +15,15 @@
       <div>
         <img class="flex justify-around" src="/images/logo.jpg" alt="food junkies logo image" />
       </div>
+      {{#if loggedIn}}
+      <h2 class="justify-center italic">Hope you've got something delicious!</h2>
+      {{else}}
       <h2 class="justify-center italic">Log in or Sign Up to see exciting restaurants waiting to be discovered</h2>
+      {{/if}}
       <nav>
         {{#if loggedIn}}
-        <a href="/homepage">Homepage</a>
+        <a href="/dashboard">New Post</a>
+        <a href="/">Homepage</a>
         <button id="logout" class="">logout</button>
         {{else}}
         <a href="/login">login</a>
