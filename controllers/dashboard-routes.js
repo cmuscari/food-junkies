@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Vote } = require('../models');
-const withAuth = require('../utils/auth');
+// const withAuth = require('../utils/auth');
 
 // get all posts for dashboard that were created by logged in user
-router.get('/', withAuth, (req, res) => {
+router.get('/', (req, res) => {
   console.log(req.session);
   console.log('======================');
   Post.findAll({
@@ -40,7 +40,7 @@ router.get('/', withAuth, (req, res) => {
 });
 
 // get all with city name [?]***
-router.get('/edit/:city_name', withAuth, (req, res) => {
+router.get('/edit/:city_name', (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',
