@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Junkies</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <h1>Log in or Sign Up to see exciting restaraunts waiting to be discovered.</h1>
+    <nav>
+      {{#if loggedIn}}
+      <a href="/homepage">Homepage</a>
+      <button id="logout" class="">logout</button>
+      {{else}}
+      <a href="/login">login</a>
+      {{/if}}
+    </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+        Created by the Food Junkies!
+    </footer>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
