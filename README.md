@@ -19,6 +19,7 @@ This is a full stack web application that allows users to recommend restaurants 
 ## Screenshot
 
 ## Link to Deployed Application
+https://cmuscari.github.io/food-junkies/
 
 ## Contribution
 * Jeff Whitehead
