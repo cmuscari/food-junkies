@@ -23,6 +23,5 @@ This is a full stack web application that allows users to recommend restaurants 
 ## Contribution
 * Jeff Whitehead
 * Nathan Greiling
-* Muhammad Bangash
 * Walt Boxwell
 * Cortnie Muscari
