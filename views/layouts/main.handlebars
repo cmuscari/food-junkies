@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Junkies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div>
-    <header>
-      <h1 class="justify-center font-bold text-red-800">FOOD JUNKIES</h1>
-      <div>
-        <img class="flex justify-around" src="/images/logo.jpg" alt="food junkies logo image" />
+  <div class="container">
+    <header class="row">
+      <h1 class="col-12 d-flex justify-content-center title-text">FOOD JUNKIES</h1>
+      <div class="col-12 d-flex justify-content-center">
+        <img class="logo p-3 col-12 d-flex justify-content-center" src="/images/logo.jpg"
+          alt="food junkies logo image" />
       </div>
       {{#if loggedIn}}
-      <h2 class="justify-center italic">Hope you've got something delicious!</h2>
+      <h2 class="font-italic col-12 d-flex justify-content-center">Hope you've got something delicious!</h2>
       {{else}}
-      <h2 class="justify-center italic">Log in or Sign Up to see exciting restaurants waiting to be discovered</h2>
+      <h2 class="font-italic col-12 d-flex justify-content-center">Log In or Sign Up to see exciting restaurants waiting
+        to be discovered</h2>
       {{/if}}
-      <nav>
+      {{!-- <nav>
         {{#if loggedIn}}
         <a href="/dashboard">New Post</a>
         <a href="/">Homepage</a>
@@ -35,14 +38,25 @@
         <button id="logout" class="">logout</button>
         {{else}}
         <a href="/login">login</a>
-        {{/if}}
+        {{/if}} --}}
+      <br>
+      <nav class="col-12 d-flex justify-content-center mt-4 mb-4">
+        <div class="p-3 m-3">
+          {{#if loggedIn}}
+          <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/dashboard">New Post</a>
+          <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/">Homepage</a>
+          <button type="button" id="logout" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">logout</button>
+          {{else}}
+          <a class="btn-lg btn-dark" href="/login">Get Started!</a>
+          {{/if}}+
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="content">
       {{{ body }}}
     </main>
-    <footer>
-      Created by the Food Junkies!
+    <footer class="footer">
+      <h3 class="footer-text">Created by the Food Junkies! © 2022</h3>
     </footer>
   </div>
 
