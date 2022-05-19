@@ -25,22 +25,22 @@
       {{/if}}
       <br>
       <nav class="col-12 d-flex justify-content-center mt-4 mb-4">
-        <div p-3 m-3>
+        <div class="p-3 m-3">
           {{#if loggedIn}}
-          <a href="/dashboard">New Post</a>
-          <a href="/">Homepage</a>
-          <button type="button" id="logout" class="btn-lg btn-dark col-12 d-flex justify-content-center">logout</button>
+          <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/dashboard">New Post</a>
+          <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/">Homepage</a>
+          <button type="button" id="logout" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">logout</button>
           {{else}}
           <a class="btn-lg btn-dark" href="/login">Get Started!</a>
           {{/if}}
         </div>
       </nav>
     </header>
-    <main>
+    <main class="content">
       {{{ body }}}
     </main>
-    <footer class="row navbar navbar-default navbar-fixed-bottom">
-      <h3 class="col-12 d-flex justify-content-center text-white">Created by the Food Junkies! © 2022</h3>
+    <footer class="footer">
+      <h3 class="footer-text">Created by the Food Junkies! © 2022</h3>
     </footer>
   </div>
 
