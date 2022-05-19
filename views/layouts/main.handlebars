@@ -10,7 +10,6 @@
 </head>
 
 <body>
-  <div class="bg">
   <div class="container">
     <header class="row">
       <h1 class="col-12 d-flex justify-content-center title-text">FOOD JUNKIES</h1>
@@ -31,19 +30,19 @@
           <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/dashboard">New Post</a>
           <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/">Home</a>
           <button type="button" id="logout" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">Sign Out</button>
-                     <div class="dropdown">
-          <button type ="button" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">Search by City<i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="/post/dallas">Dallas</a>
-            <a href="/post/houston">Houston</a>
-            <a href="/post/austin">Austin</a>
+            <div class="dropdown">
+              <button type ="button" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">Search by City<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="/post/dallas">Dallas</a>
+                  <a href="/post/houston">Houston</a>
+                  <a href="/post/austin">Austin</a>
+                </div>
           </div>
-        </div>
-          {{else}}
-          <a class="btn-lg btn-dark" href="/login">Get Started!</a>
-          {{/if}}
-        </div>
-      </nav>
+    {{else}}
+    <a class="btn-lg btn-dark" href="/login">Get Started!</a>
+    {{/if}}
+</div>
+    </nav>
     </header>
     <main class="content">
       {{{ body }}}
@@ -51,7 +50,6 @@
     <footer class="footer">
       <h3 class="footer-text">Created by the Food Junkies! © 2022</h3>
     </footer>
-  </div>
   </div>
 
   {{#if loggedIn}}
