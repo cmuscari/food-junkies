@@ -24,6 +24,14 @@
         {{#if loggedIn}}
         <a href="/dashboard">New Post</a>
         <a href="/">Homepage</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="/post/dallas">Dallas</a>
+            <a href="/post/houston">Houston</a>
+            <a href="/post/austin">Austin</a>
+          </div>
+        </div>
         <button id="logout" class="">logout</button>
         {{else}}
         <a href="/login">login</a>
