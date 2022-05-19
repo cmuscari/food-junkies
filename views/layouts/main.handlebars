@@ -23,32 +23,24 @@
       <h2 class="font-italic col-12 d-flex justify-content-center">Log In or Sign Up to see exciting restaurants waiting
         to be discovered</h2>
       {{/if}}
-      {{!-- <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">New Post</a>
-        <a href="/">Homepage</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown <i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="/post/dallas">Dallas</a>
-            <a href="/post/houston">Houston</a>
-            <a href="/post/austin">Austin</a>
-          </div>
-        </div>
-        <button id="logout" class="">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}} --}}
       <br>
       <nav class="col-12 d-flex justify-content-center mt-4 mb-4">
         <div class="p-3 m-3">
           {{#if loggedIn}}
           <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/dashboard">New Post</a>
           <a class="d-flex col-12 btn btn-dark mt-1 mb-1 justify-content-center" href="/">Homepage</a>
+           <div class="dropdown">
+          <button type ="button" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">Search City<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="/post/dallas">Dallas</a>
+            <a href="/post/houston">Houston</a>
+            <a href="/post/austin">Austin</a>
+          </div>
+        </div>
           <button type="button" id="logout" class="btn btn-dark col-12 d-flex justify-content-center mt-1 mb-1">logout</button>
           {{else}}
           <a class="btn-lg btn-dark" href="/login">Get Started!</a>
-          {{/if}}+
+          {{/if}}
         </div>
       </nav>
     </header>
