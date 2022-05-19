@@ -1,7 +1,14 @@
 {{#if loggedIn}}
-<div>Welcome to the Homepage</div>
+<div>
+    <label for="city-name">City Name</label>
+    <select name="city-name" id="city-name">
+        <option value="dallas">Dallas</option>
+        <option value="austin">Austin</option>
+        <option value="houston">Houston</option>
+    </select>
+</div>
 <ol class="post-list">
-    {{#each post as |post|}}
+    {{#each posts as |post|}}
     <li>
         {{> post-info post}}
     </li>

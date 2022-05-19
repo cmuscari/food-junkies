@@ -70,7 +70,7 @@ router.get('/post/:city_name', (req, res) => {
 
       const post = dbPostData.get({ plain: true });
 
-      res.render('single-post', {
+      res.render('city', {
         post,
         loggedIn: req.session.loggedIn
       });
