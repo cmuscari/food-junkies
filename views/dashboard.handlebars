@@ -7,11 +7,45 @@
             <input type="text" id="post-title" name="post-title"/>
         </div>
         <div>
-            <label for="post-url">Link</label>
-            <input id="post-url" name="post-url"/>
+            <label for="city-name">City Name</label>
+            <select name="city-name" id="city-name">
+                <option value="dallas">Dallas</option>
+                <option value="austin">Austin</option>
+                <option value="houston">Houston</option>
+            </select>
+        </div>
+        <div>
+            <label for="restaurant-name">Restaurant Name</label>
+            <input id="restaurant-name" name="restaurant-name"/>
+        </div>
+        <div>
+            <label for="restaurant-url">Restaurant Website</label>
+            <input id="restaurant-url" name="restaurant-url"/>
+        </div>
+        <div>
+            <label for="comment-text">Comments</label>
+            <input id="comment-text" name="comment-text"/>
+        </div>
+        <div>
+            <label for="photo">Photo</label>
+            <input id="photo" name="photo"/>
         </div>
         <button type="submit" class="btn">Post</button>
     </form>
 </section>
+
+{{!-- {{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}} --}}
 
 <script src="/javascript/add-post.js"></script>
