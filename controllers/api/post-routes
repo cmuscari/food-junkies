@@ -74,7 +74,7 @@ router.post('/', (req, res) => {
     Post.create({
       city_name: req.body.city_name,
       restaurant_name: req.body.restaurant_name,
-      restaurant_url: req.body.restaurant_url,
+      // restaurant_url: req.body.restaurant_url,
       comment_text: req.body.comment_text,
       // 'photo',
       user_id: req.session.user_id
