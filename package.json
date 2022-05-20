@@ -4,6 +4,7 @@
   "description": "## User Story As a food enthusiast, I want to be able to search for restaurant and dish recommendations,  so that I can try new foods when I am in a particular city.",
   "main": "index.js",
   "scripts": {
+    "watch": "nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/index.js"
@@ -31,5 +32,8 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.1",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
