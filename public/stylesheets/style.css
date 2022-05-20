@@ -98,3 +98,46 @@ body {
 div {
   background-color: white;
 }
+
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid lightgrey;
+
+  /* Add space between the border and the content */
+  padding: 8px 8px;
+
+  border-radius: 12px;
+
+  margin-top: 50px;
+}
+
+.post-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+/* Style div elements that have class equal to name */
+.name {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-top: 16px;
+}
+
+/* Style p element */
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
