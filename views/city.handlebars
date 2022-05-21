@@ -1,9 +1,10 @@
-{{!-- 
-{{> post-info post}} --}}
-
 {{#if loggedIn}}
 
-<ol class="post-list">
+<head>
+  <link rel="stylesheet" type="text/css text/html" href="dist/output.css">
+</head>
+
+<ol class="post-list underline">
     {{#each posts as |post|}}
     <li>
         {{> post-info post}}
@@ -11,3 +12,5 @@
     {{/each}}
 </ol>
 {{/if}}
+
+<script src="https://cdn.tailwindcss.com"></script>

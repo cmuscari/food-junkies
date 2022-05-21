@@ -1,10 +1,12 @@
 {{#if loggedIn}}
 
-<ol class="post-list">
+<ul class="post-list underline">
     {{#each posts as |post|}}
     <li>
         {{> post-info post}}
     </li>
     {{/each}}
-</ol>
+</ul>
 {{/if}}
+
+
