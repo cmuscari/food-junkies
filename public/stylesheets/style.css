@@ -89,7 +89,7 @@ footer {
 
 body {
  
-  background: url(../images/food-background1.jpg);
+  background: url(../images/food-background2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -97,6 +97,11 @@ body {
 
 .container {
   background-color: white;
+  padding-bottom: 80px;
+  border-radius: 60px;
+  top: 20%;
+  left: 28%;
+  position:absolute;
 }
 
 
@@ -157,3 +162,58 @@ h1 {
   margin-top: 100px;
 }
 
+.redirect {
+  position: relative;
+  padding-top: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form-card {
+  /* Change background color */
+  background-color: lightgrey;
+
+  /* Add border */
+  border: 1px solid darkgrey;
+
+  /* Add space between the border and the content */
+  padding: 8px 8px;
+
+  border-radius: 12px;
+
+  margin: auto;
+
+  max-width: 40%;
+}
+
+.greenbtn {
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: 1px solid black;
+
+}
+
+.greenbtn:hover {
+  background-color: rgb(101, 160, 255);
+}
