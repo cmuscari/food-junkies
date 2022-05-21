@@ -3,19 +3,21 @@ async function newFormHandler(event) {
   
     const title = document.querySelector('input[name="post-title"]').value;
     const restaurant_name = document.querySelector('input[name="restaurant-name"]').value;
-    const comment_text = document.querySelector('input[name="comment-text"]').value
-    const select = document.getElementById('city-name')
+    const restaurant_url = document.querySelector('input[name="restaurant-url"]').value;
+    const comment_text = document.querySelector('input[name="comment-text"]').value;
+    // const photo = document.querySelector('input[name="photo"]').value;
+    const select = document.getElementById('city-name');
     const city_name = select.options[select.selectedIndex].value;
     
 
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
-        title,
         city_name,
         restaurant_name,
-        comment_text,
-
+        restaurant_url,
+        comment_text
+        // photo
       }),
       headers: {
         'Content-Type': 'application/json'

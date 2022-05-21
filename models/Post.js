@@ -49,10 +49,8 @@ Post.init(
         },
         restaurant_url: {
             type: DataTypes.STRING,
+            defaultValue: null,
             allowNull: true,
-            validate: {
-                isURL: true
-            }
         },
         comment_text: {
             type: DataTypes.STRING,
@@ -64,10 +62,8 @@ Post.init(
         },
         photo: {
             type: DataTypes.STRING,
+            defaultValue: null,
             allowNull: true,
-            validate: {
-                isURL: true
-            }
         },
         user_id: {
             type: DataTypes.INTEGER,

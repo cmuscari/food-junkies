@@ -1,3 +1,13 @@
+{{!-- 
+{{> post-info post}} --}}
 
-{{> post-info post}}
-   
+{{#if loggedIn}}
+
+<ol class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{> post-info post}}
+    </li>
+    {{/each}}
+</ol>
+{{/if}}
