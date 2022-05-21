@@ -5,7 +5,7 @@ async function newFormHandler(event) {
     const restaurant_name = document.querySelector('input[name="restaurant-name"]').value;
     const restaurant_url = document.querySelector('input[name="restaurant-url"]').value;
     const comment_text = document.querySelector('input[name="comment-text"]').value;
-    // const photo = document.querySelector('input[name="photo"]').value;
+    const photo = document.querySelector('input[name="file"]').value;
     const select = document.getElementById('city-name');
     const city_name = select.options[select.selectedIndex].value;
     
@@ -16,8 +16,8 @@ async function newFormHandler(event) {
         city_name,
         restaurant_name,
         restaurant_url,
-        comment_text
-        // photo
+        comment_text,
+        photo
       }),
       headers: {
         'Content-Type': 'application/json'

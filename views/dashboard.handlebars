@@ -26,11 +26,15 @@
             <label class="label-text font-weight-bold" for="comment-text">Comments:</label>
             <input id="comment-text" name="comment-text"/>
         </div>
+
+        {{> post-photo post}}
+
+
         {{!-- <div class="mt-1 mb-1">
             <label class ="label-text font-weight-bold" for="photo">Photo</label>
             <input id="photo" name="photo"/>
         </div> --}}
-        <button type="submit" class="btn btn-dark mt-3">Submit Your Post</button>
+        {{!-- <button type="submit" class="btn btn-dark mt-3">Submit Your Post</button> --}}
     </form>
 </section>
 

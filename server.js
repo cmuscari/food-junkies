@@ -41,3 +41,15 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+
+
+
+
+
+const db = {};
+
+db.images = require("./models/image.model.js");
+
+module.exports = db;
+
