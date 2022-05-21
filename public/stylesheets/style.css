@@ -9,18 +9,17 @@
 }
 
 footer {
-    background: rgb(146, 8, 6);
-    border-radius: 7px;
-    margin: 25px 0 auto 0;
-    padding: 10px;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    height: max-content;
+  position: fixed;
+  border-radius: 7px;
+  margin: 25px 0 auto 0;
+  padding: 10px;
+  padding-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(146, 8, 6);
+  color: white;
+  text-align: center;
 }
 
 .footer-text {
@@ -90,7 +89,7 @@ footer {
 
 body {
  
-  background-color: lightgrey;
+  background: url(../images/food-background1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -151,6 +150,7 @@ p {
   left: 0;
   width: 100%;
   z-index: 1000;
+  border-radius: 7px;
 }
 
 h1 {
