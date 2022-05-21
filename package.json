@@ -30,10 +30,6 @@
     "handlebars": "^4.7.7",
     "multer": "^1.4.4",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.19.1",
-    "tailwindcss": "^3.0.24"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "sequelize": "^6.19.1"
   }
 }
