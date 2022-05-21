@@ -6,23 +6,39 @@ I want to be able to search for restaurant and dish recommendations,
 so that I can try new foods when I am in a particular city.
 
 ## Description
-This is a full stack web application that allows users to recommend restaurants and dishes by a particular city.  Users must be logged in to their account to use this application.  Once logged in, they have access to view all recommendations/posts by city, to vote on a particualar recommendation/post, or to to post a new recommendation of their own.
+This is a full stack web application that allows users to recommend restaurants and dishes by a particular city.  Users must be logged in to their account to use this application.  Once logged in, they have access to view all recommendations/posts by city or to to post a new recommendation of their own.
 
 ## Technologies Used
 - HTML (created using Handlebars templates)
-- CSS (created using Tailwind)
+- CSS (created using Bootstrap)
 - Javascript
 - Node.js & Express.js (for the API)
 - MySQL & Sequelize ORM (for the database)
-- Heroku (to deploy)
+- Heroku (to deploy) ***NOTE: DEVELOP IS THE BRANCH THAT IS DEPLOYED
 
-## Screenshot
+## New Technology Used - Multer
+Attempting to incorporate Multer module into our application to upload user photos, we referenced the following Multer Tutorial/Sample project:
+https://github.com/bezkoder/nodejs-upload-image-mysql.git
+
+***All of the original code we referenced to get the photo uploader to work in our application is included (commented out, with references) in our code***
+
+## Screenshots
+Homepage:
+![image](https://user-images.githubusercontent.com/97492722/169661741-cbbc58a3-ddd9-4955-ae6c-0c337a2c55d5.png)
+
+Dashboard:
+![image](https://user-images.githubusercontent.com/97492722/169661774-7fc95824-a1d2-4e8d-bdd3-fadff4e34e0d.png)
+
+All Posts:
+![image](https://user-images.githubusercontent.com/97492722/169661795-8d313eeb-a374-4861-a9bf-9201e9c71466.png)
+
 
 ## Link to Deployed Application
-https://cmuscari.github.io/food-junkies/
+https://secret-wildwood-10435.herokuapp.com/
 
 ## Contribution
-* Jeff Whitehead
-* Nathan Greiling
-* Walt Boxwell
-* Cortnie Muscari
+* Jeff Whitehead - Routes & Heroku
+* Nathan Greiling - HTML & CSS
+* Walt Boxwell - Frontend JS
+* Cortnie Muscari - Models, CSS, Multer
+
