@@ -24,7 +24,7 @@
           />
         </div>
         {{#if loggedIn}}
-          <h2 class="font-italic col-12 d-flex justify-content-center">Hope
+          <h2 class="welcome-header font-italic col-12 d-flex justify-content-center">Hope
             you've got something delicious!</h2>
         {{else}}
           <h2 class="font-italic col-12 d-flex justify-content-center">Log In or
@@ -54,10 +54,11 @@
       <main class="content">
         {{{body}}}
       </main>
+      </div>
+      
       <footer class="footer">
         <h3 class="footer-text">Created by the Food Junkies! © 2022</h3>
       </footer>
-    </div>
 
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>

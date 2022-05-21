@@ -99,9 +99,7 @@ body {
   background-color: white;
   padding-bottom: 80px;
   border-radius: 60px;
-  top: 20%;
-  left: 28%;
-  position:absolute;
+  margin: 5% auto;
 }
 
 
@@ -167,18 +165,7 @@ h1 {
   padding-top: 20px;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid darkgrey;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=password], select, textarea {
+input, select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid darkgrey;
@@ -216,4 +203,35 @@ input[type=password], select, textarea {
 
 .greenbtn:hover {
   background-color: rgb(101, 160, 255);
+}
+
+.new-post-form {
+   /* Change background color */
+   background-color: darkgrey;
+
+   /* Add border */
+   border: 1px solid darkgrey;
+ 
+   /* Add space between the border and the content */
+   padding: 20px 80px;
+ 
+   border-radius: 12px;
+ 
+   margin: auto;
+ 
+   max-width: 80%;
+
+}
+
+.new-post-header {
+  padding: 30 0 30 0;
+  text-align: center;
+}
+
+.welcome-header {
+  padding-bottom: 60px;
+}
+
+.post-header {
+  padding: 30 15 30 15;
 }
