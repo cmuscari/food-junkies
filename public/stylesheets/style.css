@@ -9,18 +9,17 @@
 }
 
 footer {
-    background: rgb(146, 8, 6);
-    border-radius: 7px;
-    margin: 25px 0 auto 0;
-    padding: 10px;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    height: max-content
+  position: fixed;
+  border-radius: 7px;
+  margin: 25px 0 auto 0;
+  padding: 10px;
+  padding-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(146, 8, 6);
+  color: white;
+  text-align: center;
 }
 
 .footer-text {
@@ -36,6 +35,7 @@ footer {
 /* Links inside the navbar */
 .navbar a {
   float: left;
+  display: block;
   text-align: center;
   padding: 14px 16px;
 }
@@ -89,12 +89,131 @@ footer {
 
 body {
  
-  background-color: lightgrey;
+  background: url(../images/food-background2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 
-div {
+.container {
   background-color: white;
+  padding-bottom: 80px;
+  border-radius: 60px;
+  top: 20%;
+  left: 28%;
+  position:absolute;
+}
+
+
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid lightgrey;
+
+  /* Add space between the border and the content */
+  padding: 8px 8px;
+
+  border-radius: 12px;
+
+  margin-top: 50px;
+}
+
+.post-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+/* Style div elements that have class equal to name */
+.name {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-top: 16px;
+}
+
+/* Style p element */
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(146, 8, 6);
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 7px;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+.redirect {
+  position: relative;
+  padding-top: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form-card {
+  /* Change background color */
+  background-color: lightgrey;
+
+  /* Add border */
+  border: 1px solid darkgrey;
+
+  /* Add space between the border and the content */
+  padding: 8px 8px;
+
+  border-radius: 12px;
+
+  margin: auto;
+
+  max-width: 40%;
+}
+
+.greenbtn {
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: 1px solid black;
+
+}
+
+.greenbtn:hover {
+  background-color: rgb(101, 160, 255);
 }

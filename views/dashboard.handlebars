@@ -26,11 +26,15 @@
             <label class="label-text font-weight-bold" for="comment-text">Comments:</label>
             <input id="comment-text" name="comment-text"/>
         </div>
-        <div class="mt-1 mb-1">
+
+        {{> post-photo post}}
+
+
+        {{!-- <div class="mt-1 mb-1">
             <label class ="label-text font-weight-bold" for="photo">Photo</label>
             <input id="photo" name="photo"/>
-        </div>
-        <button type="submit" class="btn btn-dark mt-3">Submit Your Post</button>
+        </div> --}}
+        {{!-- <button type="submit" class="btn btn-dark mt-3">Submit Your Post</button> --}}
     </form>
 </section>
 
@@ -38,14 +42,14 @@
 <br>
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <div class="post-container">
     {{#each posts as |post|}}
-    <li>
+    <div class="card">
       {{> post-info post}}
       {{!-- <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a> --}}
-    </li>
+    </div>
     {{/each}}
-  </ol>
+  </div>
 </section>
 {{/if}}
 

@@ -1,10 +1,10 @@
 {{#if loggedIn}}
 
-<ol class="post-list">
+<div class="post-list post-container">
     {{#each posts as |post|}}
-    <li>
+    <div class="card">
         {{> post-info post}}
-    </li>
+    </div>
     {{/each}}
-</ol>
+</div>
 {{/if}}

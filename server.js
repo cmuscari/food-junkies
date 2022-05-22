@@ -22,19 +22,17 @@ const sess = {
   })
 };
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
-// app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-app.use(session(sess));
-
-
-
 
 const hbs = exphbs.create();
 
+
 app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(session(sess));
+
 
 // turn on routes
 app.use(routes);
@@ -44,4 +42,14 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
-//comment
+
+
+
+
+
+const db = {};
+
+db.images = require("./models/image.model.js");
+
+module.exports = db;
+
