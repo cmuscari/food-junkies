@@ -38,7 +38,7 @@ https://murmuring-crag-27720.herokuapp.com/
 
 ## Contribution
 * Jeff Whitehead - Routes & Heroku
-* Nathan Greiling - HTML & CSS
+* Nathan Greiling - HTML, CSS, Heroku & Frontend JS
 * Walt Boxwell - Frontend JS
 * Cortnie Muscari - Models/Database & Multer
 
