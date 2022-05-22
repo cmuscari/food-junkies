@@ -14,7 +14,7 @@ This is a full stack web application that allows users to recommend restaurants 
 - Javascript
 - Node.js & Express.js (for the API)
 - MySQL & Sequelize ORM (for the database)
-- Heroku (to deploy) ***NOTE: DEVELOP IS THE BRANCH THAT IS DEPLOYED
+- Heroku (to deploy) 
 
 ## New Technology Used - Multer
 Attempting to incorporate Multer module into our application to upload user photos, we referenced the following Multer Tutorial/Sample project:
@@ -34,7 +34,7 @@ All Posts:
 
 
 ## Link to Deployed Application
-
+https://murmuring-crag-27720.herokuapp.com/
 
 ## Contribution
 * Jeff Whitehead - Routes & Heroku
