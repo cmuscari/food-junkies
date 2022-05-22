@@ -2,7 +2,7 @@
   "name": "food-junkies",
   "version": "1.0.0",
   "description": "## User Story As a food enthusiast, I want to be able to search for restaurant and dish recommendations,  so that I can try new foods when I am in a particular city.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
