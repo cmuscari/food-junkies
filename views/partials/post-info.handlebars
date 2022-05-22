@@ -1,0 +1,13 @@
+<article class="post">
+  {{#if photo}}
+  <img src="/resources/static/assets/uploads/" + {{req.file.filename}} alt="" class="post-img">
+  {{/if}}
+  <div class="card_details">
+    <a href="{{restaurant_url}}" target="_blank" class="name">{{restaurant_name}}</a>
+    <p class="font-italic">{{comment_text}}</p>
+  </div>
+  <div class="meta">
+  </div>
+</article>
+
+

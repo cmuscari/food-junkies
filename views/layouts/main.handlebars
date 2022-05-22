@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Junkies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="row">
+      <h1 class="col-12 d-flex justify-content-center title-text">FOOD JUNKIES</h1>
+      <div class="col-12 d-flex justify-content-center">
+        <img class="logo p-3 col-12 d-flex justify-content-center" src="/images/logo.jpg"
+          alt="food junkies logo image" />
+      </div>
+      {{#if loggedIn}}
+      <h2 class="font-italic col-12 d-flex justify-content-center">Hope
+        you've got something delicious!</h2>
+      {{else}}
+      <h2 class="font-italic col-12 d-flex justify-content-center">Log In or
+        Sign Up to see exciting restaurants waiting to be discovered</h2>
+      {{/if}}
+      <br />
+      <nav class="navbar col-12 d-flex justify-content-center mt-4 mb-4">
+        <div class="navbar">
+          {{#if loggedIn}}
+          <a class="btn btn-dark" href="/">Home</a>
+          <a class="btn btn-dark" href="/dashboard">New Post</a>
+          <div class="dropdown">
+            <button type="button" class="btn btn-dark">Search by City</button>
+            <div class="dropdown-content">
+              <a href="/api/posts/dallas">Dallas</a>
+              <a href="/api/posts/houston">Houston</a>
+              <a href="/api/posts/austin">Austin</a>
+            </div>
+          </div>
+          <button type="button" id="logout" class="btn btn-dark">Sign Out</button>
+          {{else}}
+          <a class="btn-lg btn-dark d-flex align-items-center" href="/login">Get Started!</a>
+          {{/if}}
+        </div>
+      </nav>
+    </header>
+    <main class="content">
+      {{{body}}}
+    </main>
+    <footer class="footer">
+      <h3 class="footer-text text-left">Created by the Food Junkies! © 2022</h3>
+    </footer>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
