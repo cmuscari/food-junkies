@@ -5,7 +5,7 @@
 
 .title-text {
     font-size: 100px;
-    color: rgb(146, 8, 6)
+    color: rgb(146, 8, 6);
 }
 
 footer {
@@ -130,7 +130,6 @@ body {
   object-fit: cover;
 }
 
-/* Style div elements that have class equal to name */
 .name {
   font-size: 24px;
   font-weight: 600;
@@ -234,4 +233,35 @@ input, select, textarea {
 
 .post-header {
   padding: 30 15 30 15;
+}
+
+@media screen and (max-width: 780px) {
+  .title-text {
+    font-size: 8vw;
+  }
+  .container {
+    font-size: 2vw;
+  }
+  .login-header {
+    font-size: 4vw;
+  }
+  .welcome-header {
+    font-size: 4vw;
+  }
+  .new-post-header {
+    font-size: 3vw;
+  }
+  .navbar a {
+    font-size: 2vw;
+  }
+  .btn {
+    font-size: 2vw;
+  }
+  .footer-text {
+    font-size:3vw;
+  }
+  .post-header {
+    font-size: 4vw;
+  }
+
 }
