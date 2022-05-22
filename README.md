@@ -34,11 +34,11 @@ All Posts:
 
 
 ## Link to Deployed Application
-https://secret-wildwood-10435.herokuapp.com/
+
 
 ## Contribution
 * Jeff Whitehead - Routes & Heroku
 * Nathan Greiling - HTML & CSS
 * Walt Boxwell - Frontend JS
-* Cortnie Muscari - Models, CSS, Multer
+* Cortnie Muscari - Models/Database & Multer
 
