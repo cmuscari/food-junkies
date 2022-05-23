@@ -27,7 +27,7 @@ Homepage:
 ![image](https://user-images.githubusercontent.com/97492722/169661741-cbbc58a3-ddd9-4955-ae6c-0c337a2c55d5.png)
 
 Dashboard:
-![image](https://user-images.githubusercontent.com/97492722/169661774-7fc95824-a1d2-4e8d-bdd3-fadff4e34e0d.png)
+![image](https://user-images.githubusercontent.com/97492722/169736677-fd245b95-7f21-41d8-b8cc-8951e36867a2.png)
 
 All Posts:
 ![image](https://user-images.githubusercontent.com/97492722/169661795-8d313eeb-a374-4861-a9bf-9201e9c71466.png)
